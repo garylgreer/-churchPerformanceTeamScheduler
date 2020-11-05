@@ -4,42 +4,59 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Community Church Praise Team Scheduler</title>
+    <title>Community Church Performance Team Scheduler</title>
     <meta name="viewpoint" content="width=device-width, initial-scale = 1">
 
     <link rel="stylesheet" href="./main.css">
+
+    <header class="wrapper clearfix">
+        <headerContainer>
+            <h1 class="title"> Community Church Performance Team Scheduler</h1>
+            <div class="header-container"></div>
+        </headerContainer>
+    </header>
+    </div>
 </head>
 
 
 <body>
-    <div class="header-container">
-        <header class="wrapper clearfix">
-            <h1 class="title"> Community Church Praise Team Scheduler</h1>
-        </header>
-    </div>
+
+
+
     <div class="selector-group">
         <div class="selgrp-wrapper clearfix">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select</li>
+                    <li>About</li>
+                </ul>
+            </nav>
 
-            <ul>
-                <li>
-                    <a href="pages/selectServiceDates.html">Service Date</a>
-                </li>
-                <li>
-                    <a href="pages/selectTeamMember.html">Team Member</a>
-                </li>
-                <li>
-                    <a href="pages/selectRole.html">Role</a>
-                </li>
-                <li>
-                    <a href="pages/selectPracticeDate.html">Practice Date</a>
-                </li>
-                <li>
-                    <a href="pages/selectMusic.html">Music</a>
-                </li>
+
+            <li>
+                <a href="pages/selectTeamMember.html">Team Member</a>
+            </li>
+            <li>
+                <a href="pages/selectRole.html">Role</a>
+            </li>
+            <li>
+                <a href="pages/selectPracticeDate.html">Practice Date</a>
+            </li>
+            <li>
+                <a href="pages/selectMusic.html">Music</a>
+            </li>
             </ul>
 
         </div>
     </div>
+    <section>
+        <button id="srvdat" onclick="srvDatFunction()">
+            Select a Service Date.
+
+        </button>
+
+    </section>
 
     <div class="footer">
         <div class="footer-container">
@@ -47,12 +64,17 @@
             <ul>
                 <li>
                     <a href="pages/contactUs.html">Contact Us</a>
+
                 </li>
             </ul>
         </div>
 
     </div>
 
-
+    <script>
+        function srvDatFunction() {
+            (window.location = "pages/selectSundayDates.html");
+        }
+    </script>
 </body>
 <html>
