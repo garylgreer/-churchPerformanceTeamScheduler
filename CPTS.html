@@ -8,13 +8,10 @@
     <meta name="viewpoint" content="width=device-width, initial-scale = 1">
 
     <link rel="stylesheet" href="./main.css">
-
-    <header class="wrapper clearfix">
-        <headerContainer>
-            <h1 class="title"> Community Church Performance Team Scheduler</h1>
-            <div class="header-container"></div>
-        </headerContainer>
-    </header>
+    <div>
+        <header class="wrapper clearfix">
+            <h1 class="title"> Community Church Ferpormance Team Scheduler</h1>
+        </header>
     </div>
 </head>
 
@@ -23,8 +20,8 @@
 
 
 
-    <div class="selector-group">
-        <div class="selgrp-wrapper clearfix">
+    <div class="selectorGroup">
+        <div class="selectorGroupWrapper clearfix">
             <nav>
                 <ul>
                     <li>Home</li>
@@ -32,49 +29,63 @@
                     <li>About</li>
                 </ul>
             </nav>
-
-
-            <li>
-                <a href="pages/selectTeamMember.html">Team Member</a>
-            </li>
-            <li>
-                <a href="pages/selectRole.html">Role</a>
-            </li>
-            <li>
-                <a href="pages/selectPracticeDate.html">Practice Date</a>
-            </li>
-            <li>
-                <a href="pages/selectMusic.html">Music</a>
-            </li>
-            </ul>
-
         </div>
     </div>
-    <section>
-        <button id="srvdat" onclick="srvDatFunction()">
-            Select a Service Date.
 
+    <form action="/form_Data.php">
+        <label for="srvDate">Service Date:"></label><br>
+
+        <button id="serviceDdate" onclick="serviceDateFunction()">
+            Select a Service Date.
         </button>
 
-    </section>
+        <button id="teamMember" onclick="teamMemberFunction()">
+            Identify yourself.
+        </button>
 
-    <div class="footer">
-        <div class="footer-container">
+        <button id="role" onclick="roleFunction()">
+            What role are you in the team?
+        </button>
 
-            <ul>
-                <li>
-                    <a href="pages/contactUs.html">Contact Us</a>
+        <button id="practiceDate" onclick="practiceDateFunction()">
+            Which practice is assigned to your team?
+        </button>
 
-                </li>
-            </ul>
-        </div>
-
-    </div>
+        <button id="music" onclick="musicFunction()">
+            Select your music!
+        </button>
+    </form>
 
     <script>
-        function srvDatFunction() {
+        function serviceDateFunction() {
             (window.location = "pages/selectSundayDates.html");
         }
+
+        function teamMemberFunction() {
+            (window.location = "pages/selectTeamMember.html");
+        }
+
+        function roleFunction() {
+            (window.location = "pages/selectRole.html");
+        }
+
+        function practiceDateFunction() {
+            (window.location = "pages/selectPracticeDate.html");
+        }
+
+        function musicFunction() {
+            (window.location = "pages/selectMusic.html");
+        }
     </script>
+
+    <div class="footer">
+        <ul>
+            <li>
+                <a href="pages/contactUs.html">Contact Us</a>
+
+            </li>
+        </ul>
+    </div>
+
 </body>
 <html>

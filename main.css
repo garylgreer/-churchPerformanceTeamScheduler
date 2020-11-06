@@ -4,12 +4,12 @@ Base Styles
         
         html {
             color: #222;
-            font-size: 10em;
-            line-height: 1.4;
+            font-size: 15em;
+            line-height: 2;
             box-sizing: border-box;
             background: url('images/sunRaysPraise.jpg');
             background-repeat: no-repeat;
-            background-attachment: fixed, center;
+            /* background-attachment: fixed, center; */
             background-size: auto;
         }
         
@@ -19,10 +19,14 @@ Base Styles
             box-sizing: inherit;
         }
         
-        .headerContainer {
-            border-bottom: 5px solid #9a5977;
-            background: radial-gradient(crimson, skyblue);
+        header {
+            /* border-bottom: 5px solid #9a5977; */
+            background: radial-gradient(gold, #9a5977);
             color: black;
+        }
+        
+        h1 {
+            text-align: justify;
         }
         
         body {
@@ -32,18 +36,7 @@ Base Styles
             line-height: 26px;
         }
         
-        .selgrp.wrapper {
-            width: 90%;
-            margin: 0 auto;
-        }
-        
-        .selector-group {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-        }
-        
-        selector-group {
+        .selectorGroup {
             display: block;
             margin-bottom: 10px;
             padding: 15px 0;
@@ -54,12 +47,21 @@ Base Styles
             background: #599a68;
         }
         
+        .selectorGroupWrapper {
+            width: 90%;
+            margin: 0 auto;
+        }
+        /* .selector-group {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        } */
+        
         .srvDatFunction {
             cursor: pointer;
         }
         
-        nav a:hover,
-        a:visited {
+        button {
             color: red;
         }
         
