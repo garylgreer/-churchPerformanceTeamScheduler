@@ -1,151 +1,123 @@
-        /*************************
+/*************************
 Base Styles
 *************************/
-        
-        html {
-            color: #222;
-            font-size: 15em;
-            line-height: 2;
-            box-sizing: border-box;
-            background: url('images/sunRaysPraise.jpg');
-            background-repeat: no-repeat;
-            /* background-attachment: fixed, center; */
-            background-size: auto;
-        }
-        
-         :before,
-         :after {
-            /*    content: "*"; */
-            box-sizing: inherit;
-        }
-        
-        header {
-            /* border-bottom: 5px solid #9a5977; */
-            background: radial-gradient(gold, #9a5977);
-            color: black;
-        }
-        
-        h1 {
-            text-align: justify;
-        }
-        
-        body {
-            font-family: cursive;
-            font-size: 14px;
-            padding: 20px;
-            line-height: 26px;
-        }
-        
-        .selectorGroup {
-            display: block;
-            margin-bottom: 10px;
-            padding: 15px 0;
-            text-align: center;
-            text-decoration: none;
-            font-weight: bold;
-            color: white;
-            background: #599a68;
-        }
-        
-        .selectorGroupWrapper {
-            width: 90%;
-            margin: 0 auto;
-        }
-        /* .selector-group {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-        } */
-        
-        .srvDatFunction {
-            cursor: pointer;
-        }
-        
-        button {
-            color: red;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        .main {
-            padding: 30px 0;
-        }
-        
-        .footer-container footer {
-            color: grey;
-            padding: 20px 0;
-        }
-        /*************************
+
+html {
+    color: #222;
+    font-size: 15em;
+    line-height: 2;
+    box-sizing: border-box;
+    background: url("images/sunset over water 2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+h1 {
+    font-size: 48px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: center;
+    color: #ffff;
+    box-sizing: inherit;
+    justify-content: center;
+    display: flex;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    padding: 20px;
+    line-height: 40px;
+}
+
+.srvDatFunction {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    color: rgb(252, 12, 12);
+    /* padding: 50px 0; */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: center;
+}
+
+
+/*************************
 Media Queries
 *************************/
-        
-        @media only screen and (min-width: 480px) {
-            nav a {
-                float: left;
-                width: 30%;
-                margin: 0 0 0 5%;
-                padding: 25px 1%;
-                margin-bottom: 0;
-            }
-            nav li:first-child a {
-                margin-left: 0;
-            }
-            nav li:last-child a {
-                margin-right: 0;
-            }
-        }
-        
-        @media only screen and (min-width: 768px),
-        only screen and (min-width: 700px) and (orientation: landscape) {
-            .title {
-                float: left;
-                font-size: 1.4em;
-            }
-            nav {
-                float: right;
-                width: 60%;
-            }
-            nav a {
-                padding: 15px 1%;
-            }
-            .main article {
-                float: left;
-                width: 57%;
-            }
-            .main aside {
-                float: right;
-                width: 38%;
-            }
-        }
-        
-        @media only screen and (min-width: 1140px) {
-            .wrapper {
-                width: 1026px;
-                margin: 0 auto;
-            }
-            .title {
-                font-size: 2em;
-            }
-            nav a {
-                padding: 25px 1%;
-            }
-        }
-        /*************************
-Clearfix
+
+@media only screen and (min-width: 480px) {
+    nav a {
+        float: left;
+        width: 30%;
+        margin: 0 0 0 5%;
+        padding: 25px 1%;
+        margin-bottom: 0;
+    }
+    nav li:first-child a {
+        margin-left: 0;
+    }
+    nav li:last-child a {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 768px),
+only screen and (min-width: 700px) and (orientation: landscape) {
+    /* .title { */
+    .wrapper .clearfix {
+        float: left;
+        font-size: 1.4em;
+    }
+    nav {
+        float: right;
+        width: 60%;
+    }
+    nav a {
+        padding: 15px 1%;
+    }
+    .main article {
+        float: left;
+        width: 57%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+    .wrapper {
+        width: 1026px;
+        margin: 0 auto;
+    }
+    .title {
+        font-size: 2em;
+    }
+    nav a {
+        padding: 25px 1%;
+    }
+}
+
+
+/*************************
+Clearfi+
 *************************/
-        
-        .clearfix:before,
-        .clearfix:after {
-            content: " ";
-            display: table;
-        }
-        
-        .clearfix:after {
-            clear: both;
-        }
-        
-        .clearfix {
-            *zoom: 1;
-        }
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+AGTER .clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
