@@ -1,126 +1,71 @@
 <!doctype html>
 <html>
-<script>
-    var person = new Array();
-    person[0] = 'Ashley';
-    person[1] = 'Melissa';
-    person[2] = 'Sherry';
-    person[3] = 'Morgan';
-    person[4] = 'Julie';;
-    person[5] = 'Ginger';
-    person[6] = 'Sarah';
-    person[7] = 'Mike';
-    person[8] = 'Billy';
-    person[10] = 'Jared';
-    person[11] = 'Keith';
-    person[12] = 'Rob';
-    person[13] = 'Craig';
-    person[14] = 'Joe';
-    person[15] = 'Randy';
-    person[16] = 'Scott';
-    person[17] = 'Kevin';
-    person[18] = 'James';
-    person[19] = 'Chloe';
-    person[20] = 'Gary G';
-    person[21] = 'Worth';
-    person[22] = 'Tony';
-    person[23] = 'Bart';
-    person[24] = 'Gary S';
-    person[25] = 'Joshua';
 
-    var role = new Array
-    role[0] = 'Grand Piano';
-    role[1] = 'Electric Guitar';
-    role[2] = 'Acoustic Guitar';
-    role[3] = 'Bass Guitar';
-    role[4] = 'Drums';
-    role[5] = 'Keyboard';
-    role[6] = 'Lead Vocal';
-    role[7] = 'Harmony Vocal';
-    role[8] = 'Brass Ensemble';
-    role[9] = 'LiveStream';
-    role[10] = 'ProPresenter';
-    role[11] = 'Lighting';
-    role[12] = 'Soundboard';
-    role[13] = 'Camera';
-
-    var dotsOnThePage = new Array
-    dotsOnThePage[0] = 'Alive & Breathing';
-    dotsOnThePage[0] = 'Give Me Faith';
-    dotsOnThePage[0] = 'Holy Water';
-    dotsOnThePage[0] = 'Live Like That';
-    dotsOnThePage[0] = 'Who You Say I Am';
-</script>
 
 <head>
     <title>Church Performance Team Scheduler</title>
 
-    <meta name="viewpoint" content="width=device-width, initial-scale = 1">
+    <meta name=" viewpoint " content="width=device-width, initial-scale=1 ">
 
-    <link rel="stylesheet" href="./main.css ">
-
+    <link rel="stylesheet " href="./main.css ">
+    <script src="./js/person.js"></script>
+    <script src=" ./js/role.js " async></script>
+    <script src=" js/dotsOnThePage.js " async></script>
+    document.getElementById('teamMember')
 </head>
 
 <body>
     <h1>Church Performance Team Scheduler
     </h1>
-    <div class="instructions">
+    <div class="instructions ">
         <p>
             Please enter your stuff!!
         </p>
     </div>
     <nav>
-        <div class="flex">
-            <form action="/action_results_page.php " target="_blank">
-                <p class="justify">
-                    <input list="teamMember" type=" list " name="teamMember " placeholder="Who ' s this?" required>
-                    <datalist id="teamMember">
-                        <option>Ashley Davis</option>
-                        <option>Melissa Valesco</option>
-                        <option>Sherry Nichter</option>
-                    </datalist>
-                    <!-- <label for=" teamMember " class="justify ">Team Member </label>
-                    <select name="teamMember " id="teamMember ">
-                        <option value="1">Ashley Davis</option>
-                        <option value="2">Melissa Valesco</option>
-                        <option value="3">Sherry Nichter</option>
-                    </select>
-                    <input type="text "> -->
+        <div class="flex ">
+            <form action="/action_results_page.php " target="_blank ">
+                <p class="justify ">
+                    <input list="teamMember " type=" list " name="teamMember " placeholder="Who ' s this? " required>
+                    <datalist id="teamMember "></datalist>
 
-                    <div class="clear"></div>
+
+                    <div class="clear "></div>
                 </p>
 
-                <p class="justify">
+                <p class="justify ">
                     <label>Service Date;
-                    <input type="date" name="serviceDate" placeholder="Which Service Date? " required>
+                    <input type="date " name="serviceDate " placeholder="Which Service Date? " required>
                     </label>
-                    <div class="clear"></div>
+                    <div class="clear "></div>
                 </p>
 
-                <p class="justify">
+                <p class="justify ">
                     <label>Role;
-                         <input type="text" name="role" placeholder="Your assigned role? " required>
-                    </label>
-                    <div class="clear"></div>
+                         <input type="text " name="role " list="role "
+                         placeholder="Your assigned role? " 
+                         required>
+                                           </label> datalist
+                    <div class="clear "></div>
                 </p>
 
                 <p>
-                    <label class="justify">Practice Date;
-                       <input type="date" name="practiceDate" placeholder="Which Practice Date? " required>
+                    <label class="justify ">Practice Date;
+                       <input type="date " name="practiceDate " placeholder="Which Practice Date? " required>
                     </label>
-                    <div class="clear"></div>
+                    <div class="clear "></div>
                 </p>
 
                 <p>
-                    <label class=" justify"> Music;
-                    <input type="text" name="music" placeholder="Which songs?" required>
+                    <label class=" justify "> Music;
+                    <input type="text " name="music " placeholder="Which songs? " required>
                     </label>
-                    <div class="clear"></div>
+                    <div class="clear "></div>
                 </p>
 
                 <p>
-                    <label class="justify">
-                    <input type="submit" value="Create your Service Outline ">
+                    <label class="justify ">
+                    <input type="submit " value="Create your Service Outline ">
                     </label>
                 </p>
             </form>
