@@ -24,3 +24,8 @@ person[22] = 'Tony';
 person[23] = 'Bart';
 person[24] = 'Gary S';
 person[25] = 'Joshua';
+
+for (var ndx = 0; ndx < person.length; ndx++) {
+    var entry = person[ndx]
+    var element = document.getElementById("person");
+}

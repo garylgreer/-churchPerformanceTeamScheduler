@@ -5,88 +5,106 @@
 <head>
     <title>Church Performance Team Scheduler</title>
 
-    <meta name=" viewpoint " content="width=device-width, initial-scale=1 ">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1 ">
 
     <link rel="stylesheet " href="./main.css ">
     <script src="./js/person.js"></script>
-    <script src=" ./js/role.js " async></script>
-    <script src=" js/dotsOnThePage.js " async></script>
-    document.getElementById('teamMember')
+    <script src="./js/role.js" async></script>
+    <script src="./js/dotsOnThePage.js" async></script>
+
 </head>
 
 <body>
     <h1>Church Performance Team Scheduler
     </h1>
-    <div class="instructions ">
+    <div class="instructions">
         <p>
-            Please enter your stuff!!
+            Please enter your credentials!
         </p>
     </div>
-    <nav>
-        <div class="flex ">
-            <form action="/action_results_page.php " target="_blank ">
-                <p class="justify ">
-                    <input list="teamMember " type=" list " name="teamMember " placeholder="Who ' s this? " required>
-                    <datalist id="teamMember "></datalist>
+    <br>
+    <div class="flex">
+        <form action="/action_results_page.php" target="_blank">
 
-
-                    <div class="clear "></div>
-                </p>
-
-                <p class="justify ">
-                    <label>Service Date;
-                    <input type="date " name="serviceDate " placeholder="Which Service Date? " required>
+            <p class="justify">
+                <label>Select your name:
+                    <input 
+                        list="teamMember" 
+                        type="list" 
+                        name="teamMember" 
+                        placeholder="Who is this?" 
+                        required>
                     </label>
-                    <div class="clear "></div>
-                </p>
+                <div class="clear"></div>
+            </p>
+            <p class="justify">
+                <label>Role:
+                         <input 
+                            type="text" 
+                            name="role" 
+                            list="role"
+                            placeholder="Your assigned role? " 
+                            required>
+                    </label>
+                <div class="clear"></div>
+            </p>
+            <p class="justify">
+                <label>Service Date:
+                        <input type="date" 
+                        name="serviceDate" 
+                        placeholder="Which Service Date?" 
+                        required>
+                    </label>
+                <div class="clear"></div>
+            </p>
 
-                <p class="justify ">
-                    <label>Role;
-                         <input type="text " name="role " list="role "
-                         placeholder="Your assigned role? " 
+
+
+            <p class="justify">
+                <label>Practice Date:
+                         <input type="date" 
+                         name="practiceDate" 
+                         placeholder="Which Practice Date?" 
                          required>
-                                           </label> datalist
-                    <div class="clear "></div>
-                </p>
-
-                <p>
-                    <label class="justify ">Practice Date;
-                       <input type="date " name="practiceDate " placeholder="Which Practice Date? " required>
                     </label>
-                    <div class="clear "></div>
-                </p>
+                <div class="clear"></div>
+            </p>
 
-                <p>
-                    <label class=" justify "> Music;
-                    <input type="text " name="music " placeholder="Which songs? " required>
+            <p class="justify">
+                <label>Music:
+                        <input 
+                        type="text"
+                        name="dotsOnThePage"
+                        list="dotsOnThePage"                        
+                        placeholder="Which songs?"
+                        required>
                     </label>
-                    <div class="clear "></div>
-                </p>
+                <div class="clear"></div>
+            </p>
+    </div>
+    <script type="text/javascript ">
+        function getOption() {
+            selectElement =
+                document.querySelector('#select1');
 
-                <p>
-                    <label class="justify ">
-                    <input type="submit " value="Create your Service Outline ">
+            output = selectElement.value;
+
+            document.querySelector('.output').textContent = output;
+        }
+    </script>
+    <p class="justify">
+        <label>Create Service Outline:
+                    <input type="submit" value="Click Me!">
                     </label>
-                </p>
-            </form>
-        </div>
-    </nav>
-    <!-- <div class="popup " onclick="subscribe() ">Click me!
-        <span class="popuptext " id="myPopup ">Popup text...</span>
-        </div>
-        <script>
-            function subscribe() {
-                var popup = document.getElementById("myPopup ");
-                popup.classList.toggle("show ");
-            }
-        </script>
-        </nav> -->
+    </p>
+    </form>
+    </div>
 
-    <div id='subscribe '>
-        <p align=center>
-            Subscribe to our
-            <a href="pages/subscribe.html " <span style="color:coral ">Alert Notice</span>      
-        </a> to be reminded of your responsibilities.
+    <br><br>
+
+    <div class="subscribe">
+        Subscribe to the <a href=" pages/subscribe.html " <span style="color:#ffff "> Alert Notice</span>
+            </a> to be reminded of your responsibilities.
 
         </p>
     </div>
@@ -94,13 +112,14 @@
 
 
 
-    <div id='footer '>
-        <p style="background-color:rgb(10, 83, 241); ">
-            <a href="pages/contactUs.html ">Contact us</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-            <a href="pages/webSite.html ">Our website</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-            <a href="pages/aboutUs.html ">About us!</a>
+    <div id='footer'>
+        <p>
+            <nav>
+                <a href="https://phoschurch.com ">Our website</a>
+                <a href="https://phoschurch.com/contact">Contact us</a>
+                <a href="https://phoschurch.com/what-we-believe">Our Beliefs</a>
+            </nav>
         </p>
-    </div>
 
 </body>
 

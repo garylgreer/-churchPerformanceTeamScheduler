@@ -13,3 +13,8 @@ role[10] = 'ProPresenter';
 role[11] = 'Lighting';
 role[12] = 'Soundboard';
 role[13] = 'Camera';
+
+for (var ndx = 0; ndx < role.length; ndx++) {
+    var entry = role[ndx];
+    var element = document.getElementById("role");
+}
